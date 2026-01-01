@@ -1,13 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.loi.cps5001_assessment;
 
 /**
  *
  * @author kirth
  */
-public class Incident {
-    
+public class Incident extends Node {
+
+    private Severity severity;
+    private ResourceType requiredResource;
+
+    public Incident(String id, String name,
+                    Severity severity,
+                    ResourceType requiredResource) {
+        super(id, name);
+        this.severity = severity;
+        this.requiredResource = requiredResource;
+    }
+
+    public Severity getSeverity() {
+        return severity;
+    }
+
+    public ResourceType getRequiredResource() {
+        return requiredResource;
+    }
 }
+

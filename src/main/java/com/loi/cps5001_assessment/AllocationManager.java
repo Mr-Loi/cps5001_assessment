@@ -49,5 +49,10 @@ public class AllocationManager {
             System.out.println("No available unit for incident " + incident.getName());
         }
     }
+    
+    public void releaseUnit(ResponseUnit unit) {
+        unit.release();
+    }
+
 }
 

@@ -8,6 +8,8 @@ package com.loi.cps5001_assessment;
  *
  * @author kirth
  */
-public class UnitStatus {
-    
+public enum UnitStatus {
+    AVAILABLE,
+    DEPLOYED
 }
+

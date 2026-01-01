@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.loi.cps5001_assessment;
 
 /**
  *
  * @author kirth
  */
-public class NodeDistance {
-    
+class NodeDistance {
+    Node node;
+    double distance;
+
+    NodeDistance(Node node, double distance) {
+        this.node = node;
+        this.distance = distance;
+    }
 }
+
+

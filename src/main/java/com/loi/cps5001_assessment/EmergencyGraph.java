@@ -8,6 +8,7 @@ import java.util.*;
 
 public class EmergencyGraph {
 
+    // Adjacency list
     private Map<Node, List<Edge>> adjacencyList = new HashMap<>();
 
     public void addNode(Node node) {
@@ -35,7 +36,8 @@ public class EmergencyGraph {
         return adjacencyList.get(node);
     }
     
-        public Map<Node, Double> dijkstra(Node source) {
+    // Dijkstra algorithm
+    public Map<Node, Double> dijkstra(Node source) {
 
         Map<Node, Double> distances = new HashMap<>();
         PriorityQueue<NodeDistance> queue =

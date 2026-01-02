@@ -9,6 +9,7 @@ public class Incident extends Node {
     private Severity severity;
     private ResourceType requiredResource;
 
+    // Superclass of node class
     public Incident(String id, String name,
                     Severity severity,
                     ResourceType requiredResource) {

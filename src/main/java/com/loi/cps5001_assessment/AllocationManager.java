@@ -13,7 +13,8 @@ public class AllocationManager {
     public AllocationManager(EmergencyGraph graph) {
         this.graph = graph;
     }
-
+    
+    // Allocates units from dispatch centre
     public void dispatchUnit(List<DispatchCentre> centres, Incident incident) {
 
         DispatchCentre bestCentre = null;

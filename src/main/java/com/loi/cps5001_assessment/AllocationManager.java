@@ -34,6 +34,7 @@ public class AllocationManager {
             double severityWeight = incident.getSeverity().ordinal() + 1;
             double score = distance * severityWeight;
 
+            // Best-case scenario
             if (score < bestScore) {
                 bestScore = score;
                 bestCentre = centre;

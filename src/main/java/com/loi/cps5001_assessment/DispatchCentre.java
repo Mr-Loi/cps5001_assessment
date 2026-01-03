@@ -20,7 +20,7 @@ public class DispatchCentre extends Node {
         units.add(unit);
     }
 
-    // Checks enumeration to see if there is an available unit
+    // Checks to see if there is an available unit
     public List<ResponseUnit> getAvailableUnits(ResourceType type) {
         List<ResponseUnit> available = new ArrayList<>();
         for (ResponseUnit unit : units) {
